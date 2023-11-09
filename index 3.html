@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Evelyn's pizza house</h1>
+    </header>
+
+    <!-- hero -->
+    <div class="section1">
+        <div class="overlay"></div>
+        <img class="bot" src="image/pizzabot-01.png" alt="pizzabot">
+    </div>
+
+    <div class="container">
+
+        <!-- chat1 -->
+        <div class="box">
+            <div>
+                <img class="botHead" src="image/pizzabot-02.png" alt="head">
+            </div>
+
+            <div class="text">
+                <p>Hey! My name is <span style="color: rgb(250, 104, 14);">Eizza-bot</span>. Happy to serve your pizza!<br><br>
+                    Today on our menu, we have</p>
+                
+                <div class="menu">
+                    <div class="menu-flv">
+                        <img class="pizzaIcn" src="image/pizzabot-04.png" alt="">Vegetarian pizza
+                    </div>
+
+                    <div class="menu-flv">
+                        <img class="pizzaIcn" src="image/pizzabot-05.png" alt="">Hawaiian pizza
+                    </div>
+
+                    <div class="menu-flv">
+                        <img class="pizzaIcn" src="image/pizzabot-03.png" alt="">Pepperoni pizza
+                    </div>
+                </div>
+
+            </div>            
+        </div>
+
+
+        <!-- chat2 -->
+        <div class="box">
+            <div>
+                <img class="botHead" src="image/pizzabot-02.png" alt="head">
+            </div>
+
+            <div class="text">
+                 <p>Now please select a flavor you like!
+
+                <form id="pizzaForm">
+
+                    <label for="pizzaType">Choose a flavor:</label>
+                    <select name="pizzaType" id="pizzaType">
+                        <option value="">Choose a flavor</option>
+                        <option value="vegetarian">Vegetarian Pizza</option>
+                        <option value="hawaiian">Hawaiian Pizza</option>
+                        <option value="pepperoni">Pepperoni Pizza</option>
+                    </select>
+                </form>
+            </div>
+            
+        </div>
+
+
+        <!-- chat3 -->
+        <div class="box">
+            <div>
+                <img class="botHead" src="image/pizzabot-02.png" alt="head">
+            </div>
+
+            <div class="text">
+
+                <p>Please let me know how many pizza do you want.</p>
+
+                <form id="pizzaForm">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+                    <input class="btn" id="btn" type="button" value="Get my pizza">
+                </form>
+            </div>
+            
+        </div>
+
+         <!-- result -->
+        <div class="box">
+            <div>
+                <img class="botHead" src="image/pizzabot-02.png" alt="head">
+            </div>
+
+            <form id="pizzaForm" >
+                <div class="result" id="result"></div>
+            </form>
+        </div>            
+
+        <footer class="footer">
+            <p>- All right reserve 2023 Evelyn -</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function myFunction(){
+            document.getElementById("pizzaForm").submit()
+        }
+    </script>
+
+    <script src="version3.js"></script> 
+</body>
+</html> 
